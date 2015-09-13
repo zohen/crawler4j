@@ -75,7 +75,7 @@ public class WebCrawler implements Runnable {
   /**
    * The fetcher that is used by this crawler instance to fetch the content of pages from the web.
    */
-  private PageFetcher pageFetcher;
+  protected PageFetcher pageFetcher;
 
   /**
    * The RobotstxtServer instance that is used by this crawler instance to
@@ -86,12 +86,12 @@ public class WebCrawler implements Runnable {
   /**
    * The DocIDServer that is used by this crawler instance to map each URL to a unique docid.
    */
-  private DocIDServer docIdServer;
+  protected DocIDServer docIdServer;
 
   /**
    * The Frontier object that manages the crawl queue.
    */
-  private Frontier frontier;
+  protected Frontier frontier;
 
   /**
    * Is the current crawler instance waiting for new URLs? This field is
